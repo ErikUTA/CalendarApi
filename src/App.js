@@ -22,6 +22,7 @@ function App() {
   };
 
   const localizer = momentLocalizer(moment);
+  console.log('object');
 
   useEffect(() => {
     axios.get(process.env.REACT_APP_API + '/google/calendars').then(res => {
