@@ -37,7 +37,7 @@ function App() {
   }, [calendars]);
 
   useEffect(() => {
-    axios.get().then(res => {
+    axios.get().then(res => { 
       const events = [];
       var helperResponse = JSON.parse(res.text);
       if (helperResponse.items.length > 0) {
